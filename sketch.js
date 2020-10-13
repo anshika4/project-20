@@ -19,13 +19,14 @@ function setup() {
 
   wall=createSprite(1200, 200, 60, height/2);
   wall.shapeColor=color(80,80,80);
+  zenia.velocityX=speed;
   drawSprites();
 }
 
 function draw() {
   background(0);  
 
-  zenia.velocityX=speed;
+  
  
 
   if(wall.x-zenia.x<(zenia.width+wall.width)/2  ){
